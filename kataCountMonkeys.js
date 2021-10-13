@@ -1,11 +1,12 @@
 function monkeyCount(n) {
-    // your code here
-    var sum = [];
-    for (var i = 0; i < n.length; i++){
-        sum = sum.push(n[i]);
+    var myArr = [];
+    for (var i = 1; i <= n; i++){
+        myArr.push(i);
     }
-    return sum;
-}
+    return myArr;
+  }   
+
 
 console.log(monkeyCount(10)); // --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 console.log(monkeyCount(1)); // --> [1];
+console.log(monkeyCount(0)); // --> [];
